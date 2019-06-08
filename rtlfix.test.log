@@ -1,0 +1,66 @@
+*****!***** Begin new session *****
+Debug [NOTE]: 6 is ./rtlfix.test.log
+Debug [NOTE]: Starting rtlfix loop part -t
+Debug [ERROR]: Rtlfix loop step is greater than 6 somehow. manually resetting to step 1
+Debug [NOTE]: Starting rtlfix loop part 1
+Preparing to remove rtl8723be kernel module.
+Module removed.
+Added module
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+[WARNING]:Ping failed to connect to Google's DNS server 5 times. Are you set up to autoconnect to a network that iwlist scan can find?
+Debug [NOTE]: Restarting rtlfix loop
+Debug [NOTE]: Starting rtlfix loop part 2
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Debug [NOTE]: Ping unsuccessful, retrying.
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+[WARNING]:Ping failed to connect to Google's DNS server 5 times. Are you set up to autoconnect to a network that iwlist scan can find?
+Debug [NOTE]: Restarting rtlfix loop
+Debug [NOTE]: Starting rtlfix loop part 3
+Module removed.
+Added module
+Checking connection...
+iwlist scan found networks!
+Debug [NOTE]: attempting to ping 8.8.8.8
+Connection Successful!
