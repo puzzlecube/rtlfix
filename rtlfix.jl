@@ -1,3 +1,5 @@
+#!/usr/bin/env julia
+
 rtl_verbose = false			# Verbose mode, print and log everything including debug information
 rtl_log = stdout			# File / TTY to log to
 rtl_log_is_stdout = true	# Denotes whether or not the log is stdout

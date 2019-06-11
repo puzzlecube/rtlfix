@@ -28,6 +28,7 @@ TODO list:
 	Add the ability to supply additional flags to the modprobe command that adds the kernel module back again
 	FInd better ways to determine if the card is running than requiring you to have a network that NetworkManager is set up to autoconnect to.
 	Could probably be faster.
+	Add to the installer the option to build a standalone binary.
 
 Known bugs:
 	One check whines about the startign step for some reason.
@@ -35,4 +36,12 @@ Known bugs:
 
 Other notes: This entire script was written also as a test of my julia skills with NO access to the internet until the first successful run so things may be a little bit odd since methods() and the REPL were my only documentation.
 
-In theory this could be compiled into a standalone binary and not require julia if myself or someone else released binaries but for now it works great as a script.
+To install the uncompiled script to /usr/local/bin/rtlfix just run (as root)
+	./script-installer.jl
+To install the script somewhere else run:
+	./script-installer.jl --prefix /where/you/want/it
+
+Uninstalling can be done by running: (as root)
+	./script-installer.jl uninstall
+
+Options for the script isntaller can be seen by passing -h or --help or any invalid parameter to it.
