@@ -287,14 +287,15 @@ end
 
 
 """
-	select_start()
+	get_partnum()
 		Select which part of the rtlfix loop to start at. Here since rtl_start_part must be a string. Thank you parse function!
 """
-function select_start()
-	try parse(UInt8,rtl_start_part,base=6) # Use base 6 because anything above it will throw an error which is what we want.
+function get_partnum(partstr)
+	partnum = try parse(UInt8,partstr,base=6) # Use base 6 because anything above it will throw an error which is what we want.
 	catch
 		show_error("Step is not in range 1 through 6. Exiting.")
 	end
+	return partnum
 end
 
 function select_maxsize(size_string)
@@ -328,9 +329,9 @@ for (pos,arg) in pairs(ARGS)
 		global rtl_use_color = false
 		global validArgs[pos] = true
 	elseif arg == "-s" || arg == "--part"
-		global rtl_start_part = ARGS[pos+1]
+		global rtl_start_part = get_partnum(ARGS[pos+1])
 		global validArgs[pos] = true
-		global validArgs[pos] = true
+		global validArgs[pos+1] = true
 	elseif arg == "-t" || arg == "--logmax"
 		global validArgs[pos] = true
 		log_max_size = select_maxsize(ARGS[pos+1])
